@@ -31,6 +31,8 @@ function cmdline#_init_options() abort
         \   row: &lines / 2,
         \   width: 80,
         \   zindex: 1000,
+        \   title: '',
+        \   title_pos: 'left'
         \ }
 endfunction
 function cmdline#_options() abort
@@ -114,6 +116,8 @@ function cmdline#enable() abort
           \   anchor: 'NW',
           \   style: 'minimal',
           \   zindex: options.zindex,
+          \   title: options.title,
+          \   title_pos: options.title_pos,
           \ }
 
     if cmdline.id > 0
